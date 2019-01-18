@@ -66,7 +66,7 @@ int main()
             {
                 for (int i = 0; i < index; i++)
                 {
-                    printf("xusheng%sdeyuwen%d,shuxue%d,yingyu%d \n", arr[i].name,arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+                    printf("xusheng%s,yuwen%d,shuxue%d,yingyu%d \n", arr[i].name, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
                 }
             }
             else
@@ -80,6 +80,19 @@ int main()
         }
         if (code == 4)
         {
+            printf("zongfenbuhegedetongxueruxia: \n");
+            for (int i = 0; i < index; i++)
+            {
+                int sum = arr[i].yuwen + arr[i].shuxue + arr[i].yingyu;
+                if (sum < 180)
+                {
+                    printf("xusheng%s,yuwen%d,shuxue%d,yingyu%d \n", arr[i].name, arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+                }
+            }
+            printf("dianjihuichejixu \n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
         if (code == 5)
         {
@@ -92,6 +105,8 @@ int main()
         }
         if (code == 8)
         {
+            printf("jieshu \n");
+            break;
         }
     }
     return 0;
