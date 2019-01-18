@@ -60,24 +60,39 @@ int main()
             scanf("%c", &x);
             scanf("%c", &x);
         }
-        if(code==3){
-
+        if (code == 3)
+        {
+            if (index > 0)
+            {
+                for (int i = 0; i < index; i++)
+                {
+                    printf("xusheng%sdeyuwen%d,shuxue%d,yingyu%d \n", arr[i].name,arr[i].yuwen, arr[i].shuxue, arr[i].yingyu);
+                }
+            }
+            else
+            {
+                printf("xianshishibai,dianjihuijixi \n");
+            }
+            printf("gianjihuichejixu \n");
+            char x;
+            scanf("%c", &x);
+            scanf("%c", &x);
         }
-        if(code==4){
-            
+        if (code == 4)
+        {
         }
-        if(code==5){
-            
+        if (code == 5)
+        {
         }
-        if(code==6){
-            
+        if (code == 6)
+        {
         }
-        if(code==7){
-            
+        if (code == 7)
+        {
         }
-        if(code==8){
-            
+        if (code == 8)
+        {
         }
     }
     return 0;
-}   
+}
